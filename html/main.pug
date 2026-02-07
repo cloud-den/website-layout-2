@@ -1,0 +1,24 @@
+mixin topic-card(type, topic, image)
+    div.main__card
+        div.main__card-img
+            img.main__card-picture(src=image alt="Изображения")
+        div.main__card-type= type
+        div.main__card-topic= topic
+        div.main__card-user
+            span.main__card-author Niek Bove
+            span.main__card-date April 8, 2018
+            span.main__card-views 3K Views
+        div.main__card-description Structured gripped tape insvisible moulded cups for sappor firm hold strong powermesh front liner
+
+        
+main
+    div.main
+        +topic-card('Lifestyle', 'Right For Your Exerice Regime', '../media/png/1.png')
+        +topic-card('Style', 'The Look: Perfect Balance', '../media/png/2.png')
+        +topic-card('Style', 'Fun Things to Do in Rome', '../media/png/3.png')
+        +topic-card('Lifestyle', 'Simple Card Text', '../media/png/4.png')
+        +topic-card('Lifestyle', 'A cheerful girl at a party', '../media/png/5.png')
+        +topic-card('Style', 'Advertising girl', '../media/png/6.png')
+        +topic-card('Lifestyle', 'Friends are sitting in a cafe', '../media/png/7.png')
+        +topic-card('Lifestyle', 'A girl in a beautiful place', '../media/png/8.png')
+        +topic-card('Style', 'Party in a beautiful place', '../media/png/9.png')
